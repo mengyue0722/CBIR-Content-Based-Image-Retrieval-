@@ -1,0 +1,13 @@
+path.txt记录了图片的绝对路径；
+color.txt记录了利用颜色矩法提取的颜色特征值；
+texture.txt记录了利用灰度共生矩阵提取的纹理特征值；
+shape.txt记录了利用形状不变矩法提取的形状特征值。
+DB.sql是本项目使用的两个数据库，图库和特征库
+
+运行前环境调试：
+设置上面四个txt文件存储位置，对应修改user包中main类的pathtxt，colortxt，texturetxt，shapetxt变量路径；
+配置opDB包Insert和Select类中关于数据库的信息；
+
+运行：
+首先选择本地图库，点击加载，系统会自动识别路径下的所有jpg文件，进行处理；
+处理完成后，选取源图片，选择检索方式即可。
